@@ -12,7 +12,7 @@ int main(){
 	MPI_Scatter(arr, 2, MPI_INT, rec, 2, MPI_INT, 0, MPI_COMM_WORLD);	// scatter arr with sizes of 2. Rec will recieve it 								  		whose size is 2. The process which scatters has id = 0;
 	
 	for(int i=0;i<2;i++){							// all ranks shown with the data they have
-		printf("Rank: %d recieved %d\n", rank, rec[i];
+		printf("Rank: %d recieved %d\n", rank, rec[i]);
 	}
 	
 	for(int i=0;i<2;i++){							// random operation on every process
