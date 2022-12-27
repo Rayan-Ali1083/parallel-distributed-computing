@@ -4,7 +4,7 @@
 
 int main(){
 	int rank;
-	int arr[] = {1, 8, 5, 7};				// data to distributed
+	int arr[] = {1, 8, 5, 7};				// data to distribute
 	int rec[2];						// array to store gathered data. Every process will have it's own rec[2];
 	MPI_Init(NULL, NULL);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
